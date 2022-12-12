@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="mycontainer">
+        <div class="row d-flex justify-content-center  m-5 mainrow">
+            <div class="col-md-11 py-2">
+                <h1 class="px-5 d-grid align-content-center weather">Weather App</h1>
+                <input id="city" type="search" placeholder="Enter city name" aria-label="Search">
+                <button type="submit" id="submit">Search</button>
+            </div>
+            <div class="col-md-11">
+                <h1 class="temp"><span id="temp"></span> <span><sup>0</sup>C</span> </h1>
+                <h3 id="mycity"><span id="cityName"></span></h3>
+            </div>
+            <div class="col-md-11">
+                <p> <span> <i class="bi bi-cloud-sun"></i></span>
+                    <span id="broken">
+                        broken clouds
+                    </span>
+                </p>
+
+            </div>
+            <div class="col-md-11">
+                <div class="row d-flex justify-content-around">
+                    <div class=" col-md-3 mycolThree">
+                        <i class="bi bi-thermometer-half"></i>
+                        <h3> <span id="humidity"> <span id="humidity"></span></span></h3>
+                        <h3>Humidity</h3>
+                    </div>
+                    <div class="col-md-3  mycolThree">
+                        <i class="bi bi-wind"></i>
+                        <h3><span id="wind"> <span id="wind_speed"></span> mps</span></h3>
+                        <h3>Wind</h3>
+                    </div>
+                    <div class="col-md-3 mycolThree">
+                        <i class="bi bi-speedometer2"></i>
+                        <h3><span id="wind_degrees"></span></h3>
+                        <h3>Air Degrees</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
